@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet, ScrollView } from "react-native";
 
 const ProfileEditScreen = () => {
   const [name, setName] = useState("John Doe");
@@ -7,7 +7,7 @@ const ProfileEditScreen = () => {
   const [phone, setPhone] = useState("123-456-7890");
   const [address, setAddress] = useState("123 Main St, Anytown USA");
   const [bio, setBio] = useState("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.");
-  return <View style={styles.container}>
+  return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Edit Profile</Text>
       </View>
@@ -34,7 +34,7 @@ const ProfileEditScreen = () => {
           <Text style={styles.saveButtonText}>Save Changes</Text>
         </TouchableOpacity>
       </View>
-    </View>;
+    </ScrollView>;
 };
 
 const styles = StyleSheet.create({
@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 16,
     fontWeight: "bold",
-    marginBottom: 5,
+    marginBottom: 10,
+    marginTop: 20,
     color: "#1A3B6A"
   },
   input: {
