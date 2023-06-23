@@ -114,9 +114,10 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   label: {
-    width: 150,
+    width: 155,
     color: "#376D89",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    height: 19
   },
   description: {
     flex: 1,
