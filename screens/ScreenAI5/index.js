@@ -42,7 +42,7 @@ const PetDetailsScreen = ({
           </View>
         </View>
       </View>
-    </View>;
+    <View><Text>Edit Profile</Text></View><View><Text>Edit Profile</Text></View></View>;
 };
 
 const styles = StyleSheet.create({
